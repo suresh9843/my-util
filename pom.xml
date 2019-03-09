@@ -11,4 +11,44 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>my-util</name>
 	<description>this is my-util project</description>
+	
+	<properties>
+
+
+	</properties>
+
+	<!-- <scm> <connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection> 
+		<developerConnection>scm:git: git@github.com:suresh9843/SimpleMavenProject1.git</developerConnection> 
+		<url>https://github.com:suresh9843/SimpleMavenProject1</url> <tag>HEAD</tag> 
+		</scm> -->
+
+	<scm>
+		<connection>scm:git:git@github.com:suresh9843/my-util.git</connection>
+		<developerConnection>scm:git:git@github.com:suresh9843/my-util.git</developerConnection>
+		<url>https://github.com:suresh9843/my-util</url>
+	</scm>
+
+	<repositories>
+		<repository>
+			<id>myRemoteRepository</id>
+			<url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>SnapshotVersion</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>ReleaseVersion</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
+		</repository>
+	</distributionManagement>
 </project>
